@@ -1,0 +1,166 @@
+{
+  "theme": "light",
+  "archetype": "5 (Luxury) mixed with 4 (Swiss & High-Contrast)",
+  "colors": {
+    "background_light": "#FAFAFA",
+    "background_dark": "#0B1120",
+    "primary_brand": "#1E3A8A",
+    "accent_gold": "#D4AF37",
+    "text_main": "#111827",
+    "text_muted": "#4B5563",
+    "border_light": "#E5E7EB",
+    "border_dark": "#1F2937"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Outfit",
+    "import_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap",
+    "rules": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter font-heading text-white",
+      "h2": "text-4xl md:text-5xl tracking-tight font-heading text-primary_brand",
+      "h3": "text-2xl md:text-3xl tracking-tight font-heading",
+      "overlines": "text-xs tracking-[0.2em] uppercase font-body font-semibold text-accent_gold",
+      "body": "text-base leading-relaxed font-body text-text_muted"
+    }
+  },
+  "layout_rules": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-8",
+    "border_radius": "rounded-none",
+    "grid_strategy": "Asymmetrical bento grids for features. Avoid uniform 3x3. Use col-span-2 for key features to break monotony. Grid items must be direct children of grid containers."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#1E3A8A] text-white hover:bg-[#0B1120] transition-all duration-300 py-4 px-8 text-sm uppercase tracking-widest border border-[#1E3A8A]",
+      "secondary": "bg-transparent border border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white transition-all duration-300 py-4 px-8 text-sm uppercase tracking-widest",
+      "gold": "bg-[#D4AF37] text-[#0B1120] hover:bg-[#b8952b] transition-all duration-300 py-4 px-8 text-sm uppercase tracking-widest font-semibold"
+    },
+    "cards": {
+      "services": "Group hover effects, 1px border border-[#E5E7EB], p-8 lg:p-12, bg-white, flex flex-col justify-between. Avoid heavy shadows. Use pure HTML/Tailwind.",
+      "projects": "Image-heavy, aspect-[4/5] or 16/9 depending on grid position, dark gradient overlay from bottom (bg-gradient-to-t from-black/80 to-transparent), text appears on hover."
+    },
+    "avatars": "Use CSS-based initials with bg-[#1E3A8A] and text-white flex items-center justify-center rounded-full w-12 h-12 text-lg font-heading. DO NOT use external placeholder APIs."
+  },
+  "sections_blueprint": {
+    "hero": {
+      "layout": "Full screen (min-h-screen) relative container. Background image with deep navy/black gradient overlay (bg-black/50 to bg-[#1E3A8A]/40). Content vertically centered.",
+      "elements": "Overline: 'Barka Royal Homes'. H1: 'Building Dreams, Creating Lasting Value'. Subtitle: 'Living As You Are Pleased'. CTAs: Explore Projects (Primary), Contact Us (Secondary/White outline). Bottom edge: Animated stats bar (50+ Projects, 100% Satisfaction, 10+ Years, 5 States) using glassmorphism (backdrop-blur-xl bg-white/10 border-t border-white/20)."
+    },
+    "about": {
+      "layout": "Split layout grid: Left sticky text area (Vision/Mission text), Right side a bento grid for 6 Core Values. Generous p-8 spacing on value cards.",
+      "elements": "Values: Integrity, Quality & Excellence, Innovation, Safety & Compliance, Client-Centered Approach, Sustainability. Give 'Integrity' and 'Quality' col-span-2 if using a 2-col grid."
+    },
+    "services": {
+      "layout": "The 'Technical Grid' border-collapse style. grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0. Each item has right/bottom border. No outer shadows.",
+      "elements": "Construction Solutions, Property Development, Real Estate Management, Architectural Design, Consultancy Services, Investment Advisory. Use large 01-06 numbers in light gray as background watermarks."
+    },
+    "projects_portfolio": {
+      "layout": "Filterable masonry or bento grid. 6 projects. Use framer-motion layout animations. Tab list for filters.",
+      "elements": "Filters: All, Residential, Commercial, Completed, Design Phase. Project cards open a modal or expand on hover with full details."
+    },
+    "why_choose_us": {
+      "layout": "Dark mode section (bg-[#0B1120] text-white). 6 differentiators on a bento grid. Use Aceternity 'Tracing Beam' inspired glowing borders (1px border-white/10 hover:border-[#D4AF37]/50).",
+      "elements": "Cards with lucide-react icons in gold (#D4AF37)."
+    },
+    "testimonials": {
+      "layout": "Minimalist 3-column grid. Large typography quote marks in serif.",
+      "elements": "5-star rating (lucide-react stars in gold), Client avatar (CSS initials), Name, Role."
+    },
+    "cta": {
+      "layout": "Full width banner with a dark overlay and an architectural background image (use 'services_accent' image with bg-blend-multiply bg-[#1E3A8A]/90). Text huge and center.",
+      "elements": "Title: 'Ready to build your dream?'. Buttons: Schedule Consultation, View Portfolio."
+    },
+    "contact": {
+      "layout": "2 columns. Left: Large typography contact info (Phone, Email, Hours). Right: Clean form with bottom-border-only inputs (border-b border-gray-300 focus:border-[#1E3A8A], rounded-none, bg-transparent).",
+      "elements": "Form: Name, Email, Phone, Message, Submit Button. Contact Info: +234 906 924 2088."
+    },
+    "footer": {
+      "layout": "Dark background (bg-[#0B1120]). 4 columns (Brand, Quick Links, Services, Newsletter). Massive typography logo 'BRHC' at the bottom as a watermark (text-[15vw] text-white/5 font-heading).",
+      "elements": "Newsletter input + button. Copyright info."
+    }
+  },
+  "media": {
+    "hero": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/32029c9f-48de-40ce-85d0-c7f879655a6e/images/f818ae94b3dcd5dddbf673afdd8ef5dba7e856457ec1d85bdc385805a741c1b6.png",
+      "description": "Premium modern Nigerian-style luxury mansion at sunset",
+      "category": "hero_background"
+    },
+    "about": {
+      "url": "https://images.pexels.com/photos/7937367/pexels-photo-7937367.jpeg",
+      "description": "Two architects examining blueprints",
+      "category": "about_image"
+    },
+    "services_accent": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/32029c9f-48de-40ce-85d0-c7f879655a6e/images/f79e22471408c6f86b2b5e0f6cd558dc41be3fe1baf9233f5c018c535d6c30d2.png",
+      "description": "High-end architectural blueprints",
+      "category": "cta_background_texture"
+    },
+    "projects": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/32029c9f-48de-40ce-85d0-c7f879655a6e/images/e4e6906624088c1724c6550d8052ee4bf0225f0e2b3b93dcbdd57faa3e488325.png",
+        "title": "Victoria Island Modern Bungalow",
+        "category": "Residential",
+        "status": "Completed"
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/32029c9f-48de-40ce-85d0-c7f879655a6e/images/7b43976be4039ce0e963a0502a911a3228913a1887471e340054acb4f874fd9e.png",
+        "title": "Lagos Corporate HQ",
+        "category": "Commercial",
+        "status": "Completed"
+      },
+      {
+        "url": "https://images.pexels.com/photos/31737860/pexels-photo-31737860.jpeg",
+        "title": "Ikoyi Luxury Terrace",
+        "category": "Residential",
+        "status": "Design Phase"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1670589953882-b94c9cb380f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjByZXNpZGVudGlhbCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzc5NTgyMjQ1fDA&ixlib=rb-4.1.0&q=85",
+        "title": "Lekki Residential Estate",
+        "category": "Residential",
+        "status": "Completed"
+      },
+      {
+        "url": "https://images.pexels.com/photos/13807472/pexels-photo-13807472.jpeg",
+        "title": "Abuja Glass Plaza",
+        "category": "Commercial",
+        "status": "Design Phase"
+      },
+      {
+        "url": "https://images.pexels.com/photos/14526255/pexels-photo-14526255.jpeg",
+        "title": "Maitama Office Complex",
+        "category": "Commercial",
+        "status": "Design Phase"
+      }
+    ]
+  },
+  "css_variables": {
+    "light": {
+      "--background": "0 0% 98%",
+      "--foreground": "222 47% 11%",
+      "--primary": "224 64% 33%",
+      "--primary-foreground": "210 40% 98%",
+      "--accent": "43 65% 53%",
+      "--accent-foreground": "222 47% 11%",
+      "--border": "214 32% 91%",
+      "--radius": "0rem"
+    },
+    "dark": {
+      "--background": "222 47% 11%",
+      "--foreground": "210 40% 98%",
+      "--primary": "217.2 32.6% 17.5%",
+      "--primary-foreground": "210 40% 98%",
+      "--accent": "43 65% 53%",
+      "--border": "217.2 32.6% 17.5%"
+    }
+  },
+  "dependencies_to_install": [
+    "lucide-react",
+    "framer-motion",
+    "@studio-freight/lenis",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "testing_attributes": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"hero-cta-button\"`).",
+  "implementation_instructions": "Implement with pure HTML/Tailwind for structural marketing layouts. AVOID Shadcn Card for layout flexibility. Use framer-motion for scroll-triggered fades. Ensure all heading tags use the serif font (Playfair Display) with tight tracking. The app is in .js not .tsx."
+}
