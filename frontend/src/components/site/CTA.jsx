@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { openScheduleModal } from "@/components/site/CalendlyModal";
 
 const CTA_IMAGE =
   "https://static.prod-images.emergentagent.com/jobs/32029c9f-48de-40ce-85d0-c7f879655a6e/images/f79e22471408c6f86b2b5e0f6cd558dc41be3fe1baf9233f5c018c535d6c30d2.png";
@@ -68,6 +69,10 @@ export const CTA = () => {
         >
           <a
             href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              openScheduleModal();
+            }}
             data-testid="cta-primary"
             className="group inline-flex items-center gap-3 bg-[#D4AF37] text-[#0b1120] px-8 py-4 text-xs uppercase tracking-[0.22em] font-semibold hover:bg-white transition-colors"
           >

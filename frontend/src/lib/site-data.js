@@ -295,6 +295,15 @@ export const TESTIMONIALS = [
   },
 ];
 
+// WhatsApp + Calendly
+export const WHATSAPP = {
+  number: "2349069242088", // intl format without + or spaces
+  message:
+    "Hello BRHC, I'd like to enquire about your real estate / construction services.",
+};
+
+export const CALENDLY_URL = "https://calendly.com/your-brhc-link/consultation";
+
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },

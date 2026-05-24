@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS, COMPANY } from "@/lib/site-data";
+import { openScheduleModal } from "@/components/site/CalendlyModal";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
