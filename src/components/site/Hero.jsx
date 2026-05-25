@@ -1,11 +1,61 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { STATS } from "@/lib/site-data";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80";
+const HERO_MESSAGES = [
+  {
+    headline: "Building The Future With",
+    accent: "integrity",
+  },
+  {
+    headline: "Building Dreams,",
+    accent: "Crafting Lasting Value",
+  },
+];
 
 export const Hero = () => {
+  const [messageIndex, setMessageIndex] = useState(0);
+  const [typedCount, setTypedCount] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const currentMessage = HERO_MESSAGES[messageIndex];
+  const totalCharacters =
+    currentMessage.headline.length + currentMessage.accent.length;
+  const typedHeadline = currentMessage.headline.slice(
+    0,
+    Math.min(typedCount, currentMessage.headline.length)
+  );
+  const typedAccent = currentMessage.accent.slice(
+    0,
+    Math.max(typedCount - currentMessage.headline.length, 0)
+  );
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      if (!isDeleting && typedCount >= totalCharacters) {
+        setIsDeleting(true);
+        return;
+      }
+
+      if (isDeleting && typedCount <= 0) {
+        setIsDeleting(false);
+        setMessageIndex((index) => (index + 1) % HERO_MESSAGES.length);
+        return;
+      }
+
+      setTypedCount((count) => count + (isDeleting ? -1 : 1));
+    }, (() => {
+      if (!isDeleting && typedCount >= totalCharacters) return 1400;
+      if (isDeleting && typedCount <= 0) return 350;
+      if (isDeleting) return 35;
+      return typedCount < currentMessage.headline.length ? 65 : 90;
+    })());
+
+    return () => window.clearTimeout(timer);
+  }, [currentMessage.headline.length, isDeleting, totalCharacters, typedCount]);
+
   return (
     <section
       id="top"
@@ -56,9 +106,17 @@ export const Hero = () => {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="font-heading text-white max-w-5xl text-5xl md:text-7xl lg:text-[88px] leading-[1.02] tracking-tight"
         >
-          Building The Future With
+          {typedHeadline}
+          {typedCount < currentMessage.headline.length ? (
+            <span className="inline-block ml-1 animate-pulse">|</span>
+          ) : null}
           <br />
-          <span className="italic font-light">integrity</span>
+          <span className="italic font-light">
+            {typedAccent}
+            {typedCount >= currentMessage.headline.length ? (
+              <span className="inline-block ml-1 animate-pulse">|</span>
+            ) : null}
+          </span>
         </motion.h1>
 
         <motion.p
