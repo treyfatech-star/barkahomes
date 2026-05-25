@@ -43,10 +43,10 @@ export const About = () => {
             <p className="mt-8 text-base md:text-lg text-[#4b5563] max-w-2xl leading-relaxed">
               Royal Homes & Consults ltd is a real estate development,
               construction and consultancy firm working across residential,
-              commercial and institutional projects. From single-family homes
-              in Adamawa to mixed-use complexes in Abuja, our brief stays the
-              same: deliver work that is safe, functional, beautiful — and
-              delivered on time.
+              commercial and institutional projects across Nigeria. Whether
+              for single-family homes, commercial developments or mixed-use
+              complexes nationwide, our brief stays the same: deliver work
+              that is safe, functional, beautiful — and delivered on time.
             </p>
           </motion.div>
 

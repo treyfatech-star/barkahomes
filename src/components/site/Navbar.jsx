@@ -42,11 +42,8 @@ export const Navbar = () => {
               className="w-full h-full object-cover"
             />
           </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-heading text-lg tracking-tight">BRHC</span>
-            <span className="overline text-[9px] opacity-70">
-              Royal Homes & Consults
-            </span>
+          <span className="font-heading text-sm md:text-base tracking-tight">
+            Royal Homes & Consults Ltd
           </span>
         </a>
 

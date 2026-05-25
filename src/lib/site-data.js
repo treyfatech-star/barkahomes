@@ -5,7 +5,7 @@ export const COMPANY = {
   short: "BRHC",
   full: "Royal Homes & Consults ltd",
   tagline: "Living As You Are Pleased",
-  phone: "+234 906 924 2088",
+  phone: "07085145410",
   website: "www.barkaroyalhomes.com",
   email: "hello@barkaroyalhomes.com",
   enquiryEmail: "francisbarka1@gmail.com",
@@ -298,7 +298,7 @@ export const TESTIMONIALS = [
 
 // WhatsApp + Calendly
 export const WHATSAPP = {
-  number: "2349069242088", // intl format without + or spaces
+  number: "2347085145410", // intl format without + or spaces
   message:
     "Hello BRHC, I'd like to enquire about your real estate / construction services.",
 };

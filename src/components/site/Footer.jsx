@@ -67,7 +67,7 @@ export const Footer = () => {
               client-centred delivery.
             </p>
             <p className="font-heading text-2xl italic text-[#D4AF37]">
-              Living as you are pleased.
+              BUILDING THE FUTURE WITH INTEGRITY
             </p>
           </div>
 
