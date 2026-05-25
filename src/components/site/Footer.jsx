@@ -24,8 +24,8 @@ export const Footer = () => {
     setBusy(true);
     try {
       const subject = encodeURIComponent("Newsletter signup");
-      const body = encodeURIComponent(
-        `Please add this email to the BRHC newsletter list:\n\n${email}`
+          const body = encodeURIComponent(
+        `Please add this email to the Royal Homes & Consults Ltd newsletter list:\n\n${email}`
       );
       window.location.href = `mailto:${COMPANY.email}?subject=${subject}&body=${body}`;
       toast.success("Your email app is opening for newsletter signup.");
@@ -50,24 +50,23 @@ export const Footer = () => {
               <span className="w-10 h-10 grid place-items-center overflow-hidden border border-white bg-white">
                 <img
                   src="/icon/apple-icon.png"
-                  alt="Royal Homes & Consults ltd logo"
+                  alt="Royal Homes & Consults Ltd logo"
                   className="w-full h-full object-cover"
                 />
               </span>
               <div>
-                <div className="font-heading text-lg">BRHC</div>
-                <div className="overline text-[9px] text-white/50">
-                  Royal Homes & Consults
+                <div className="font-heading text-base leading-tight">
+                  Royal Homes & Consults Ltd
                 </div>
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed max-w-sm mb-6">
-              {COMPANY.full} — a Nigerian real estate, construction and
-              consultancy practice committed to structural integrity and
-              client-centred delivery.
+              Royal Homes & Consults Ltd is a Nigerian real estate,
+              construction and consultancy practice committed to structural
+              integrity and client-centred delivery.
             </p>
             <p className="font-heading text-2xl italic text-[#D4AF37]">
-              BUILDING THE FUTURE WITH INTEGRITY
+              Building The Future With integrity
             </p>
           </div>
 
@@ -111,7 +110,7 @@ export const Footer = () => {
             <div className="overline text-[#D4AF37] mb-5">Newsletter</div>
             <p className="text-sm text-white/60 mb-5 leading-relaxed">
               Quarterly updates on projects, market thinking and design notes
-              from the BRHC studio.
+              from Royal Homes & Consults Ltd.
             </p>
             <form
               onSubmit={subscribe}
@@ -166,7 +165,7 @@ export const Footer = () => {
           </div>
           <div className="relative flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
             <div data-testid="footer-copyright">
-              © {new Date().getFullYear()} Royal Homes & Consults ltd. All rights reserved.
+              © {new Date().getFullYear()} Royal Homes & Consults Ltd. All rights reserved.
             </div>
             <div className="flex items-center gap-6">
               <span>RC 1234567</span>

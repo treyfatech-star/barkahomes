@@ -56,9 +56,7 @@ export const Hero = () => {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="font-heading text-white max-w-5xl text-5xl md:text-7xl lg:text-[88px] leading-[1.02] tracking-tight"
         >
-          Building dreams,
-          <br />
-          <span className="italic font-light">crafting</span> lasting value.
+          Building The Future With integrity
         </motion.h1>
 
         <motion.p
