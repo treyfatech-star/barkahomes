@@ -45,7 +45,7 @@ export const Hero = () => {
             className="overline text-[#D4AF37]"
             data-testid="hero-overline"
           >
-            {`// Royal Homes & Consults ltd`}
+            {`// Barka Royal Homes & Consults ltd`}
           </span>
         </motion.div>
 

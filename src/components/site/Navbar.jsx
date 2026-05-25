@@ -38,7 +38,7 @@ export const Navbar = () => {
           <span className="w-10 h-10 grid place-items-center overflow-hidden border border-current bg-white">
             <img
               src="/icon/apple-icon.png"
-              alt="Royal Homes & Consults ltd logo"
+              alt="Royal Homes & Consults Ltd logo"
               className="w-full h-full object-cover"
             />
           </span>
