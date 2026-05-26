@@ -40,14 +40,51 @@ export const About = () => {
               </span>{" "}
               and quiet ambition.
             </h2>
-            <p className="mt-8 text-base md:text-lg text-[#4b5563] max-w-2xl leading-relaxed">
-              Royal Homes & Consults ltd is a real estate development,
-              construction and consultancy firm working across residential,
-              commercial and institutional projects across Nigeria. Whether
-              for single-family homes, commercial developments or mixed-use
-              complexes nationwide, our brief stays the same: deliver work
-              that is safe, functional, beautiful — and delivered on time.
-            </p>
+            <div className="mt-8 max-w-3xl space-y-5 text-base md:text-lg text-[#4b5563] leading-relaxed">
+              <p>
+                Barka Royal Homes and Consults Ltd is a dynamic and
+                professionally driven construction and real estate development
+                firm committed to delivering high-quality, durable, and
+                value-driven built environments. The company operates across
+                the entire real estate value chain, providing integrated
+                solutions in construction, property development, real estate
+                management, and consultancy.
+              </p>
+              <p>
+                With a strong foundation in technical expertise and industry
+                best practices, the firm executes residential, commercial,
+                institutional, and mixed-use developments with precision and
+                efficiency. Our approach combines sound engineering
+                principles, innovative architectural solutions, and modern
+                project delivery systems to ensure optimal outcomes.
+              </p>
+              <p>
+                We strictly adhere to Nigerian building regulations and
+                international standards, ensuring that every project meets
+                benchmarks for safety, quality, and sustainability. By
+                leveraging modern construction technologies, efficient
+                resource management, and forward-thinking methodologies, we
+                consistently deliver projects that are economically viable,
+                structurally sound, and aesthetically distinguished.
+              </p>
+              <p>
+                At Barka Royal Homes and Consults Ltd, we go beyond
+                construction. We create enduring assets, functional spaces,
+                and thriving communities.
+              </p>
+            </div>
+            <div className="mt-8 max-w-3xl border-l-4 border-[#D4AF37] bg-white px-6 py-5">
+              <div className="overline text-[#1E3A8A] mb-3">
+                Positioning Statement
+              </div>
+              <p className="text-base md:text-lg text-[#4b5563] leading-relaxed">
+                Barka Royal Homes and Consults Ltd positions itself as a
+                reliable partner in construction and real estate
+                development, bridging the gap between vision and reality
+                through technical expertise, professional integrity, and
+                result-oriented execution.
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -82,10 +119,13 @@ export const About = () => {
             data-testid="about-vision"
           >
             <div className="overline text-[#1E3A8A] mb-4">Vision</div>
-            <p className="font-heading text-2xl md:text-3xl text-[#0b1120] leading-snug">
+            <p className="text-base md:text-lg text-[#1f2937] leading-8 md:leading-9 font-medium max-w-xl">
               To become a trusted and leading construction and real estate
-              development firm in Nigeria — recognised for structural
-              integrity, professional excellence and timely delivery.
+              development firm in Nigeria, recognized for structural
+              integrity, professional excellence, and timely project delivery,
+              while providing innovative, reliable, and sustainable housing
+              and land investment solutions that drive long-term value and
+              support sustainable urban development.
             </p>
           </motion.div>
           <motion.div
@@ -97,11 +137,14 @@ export const About = () => {
             data-testid="about-mission"
           >
             <div className="overline text-[#1E3A8A] mb-4">Mission</div>
-            <p className="font-heading text-2xl md:text-3xl text-[#0b1120] leading-snug">
+            <p className="text-base md:text-lg text-[#1f2937] leading-8 md:leading-9 font-medium max-w-xl">
               To deliver superior real estate and construction solutions
-              through technical excellence, ethical practice and innovative
-              execution — creating safe, functional and sustainable
-              developments.
+              through land sales, property development, building
+              construction, and consultancy-driven by technical excellence,
+              ethical practice, and innovative execution-while creating safe,
+              functional, and sustainable developments that generate
+              long-term value and uphold the highest standards of quality,
+              integrity, and client satisfaction.
             </p>
           </motion.div>
         </div>

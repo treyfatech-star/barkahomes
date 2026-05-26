@@ -56,77 +56,39 @@ export const SERVICES = [
     title: "Construction Solutions",
     icon: "HardHat",
     description:
-      "Turnkey delivery of residential, commercial and institutional builds, executed with structural integrity and disciplined site supervision.",
+      "Integrated construction delivery for residential, commercial, institutional, and mixed-use developments executed with technical precision and structural integrity.",
     items: [
       "Residential building construction",
-      "Commercial & institutional developments",
+      "Commercial and institutional developments",
       "Mixed-use developments",
-      "Renovation, remodeling & structural upgrades",
+      "Renovation, remodeling, and structural upgrades",
     ],
   },
   {
     number: "02",
-    title: "Property Development",
+    title: "Real Estate Development & Management",
     icon: "Building2",
     description:
-      "End-to-end development of land and built assets — from acquisition through master planning to handover.",
+      "End-to-end property solutions across development, acquisition, leasing, and management of landed and built assets.",
     items: [
-      "Landed property development",
-      "Built asset development",
-      "Land acquisition advisory",
-      "Project planning & execution",
+      "Property development (landed and built assets)",
+      "Sales and acquisition of land and buildings",
+      "Leasing and rental services (residential and commercial)",
+      "Property and facility management",
     ],
   },
   {
     number: "03",
-    title: "Real Estate Management",
-    icon: "KeyRound",
-    description:
-      "Calm, profitable management of your portfolio — tenants, facilities and maintenance handled.",
-    items: [
-      "Property management",
-      "Facility management",
-      "Leasing & rental services",
-      "Property maintenance",
-    ],
-  },
-  {
-    number: "04",
-    title: "Architectural Design",
-    icon: "Compass",
-    description:
-      "Editorial-quality architecture and interiors — climate-responsive, contextual, and unmistakably yours.",
-    items: [
-      "Residential architectural design",
-      "Commercial design solutions",
-      "Interior design",
-      "3D visualization & rendering",
-    ],
-  },
-  {
-    number: "05",
-    title: "Consultancy Services",
+    title: "Professional Consultancy Services",
     icon: "ClipboardList",
     description:
-      "Independent guidance on the technical, financial and regulatory edges of your project.",
+      "Professional advisory services that strengthen planning, decision-making, supervision, and long-term investment outcomes.",
     items: [
-      "Construction consultancy",
-      "Project planning & supervision",
+      "Construction consultancy and technical advisory",
+      "Project planning, supervision, and management",
       "Property valuation",
       "Feasibility studies",
-    ],
-  },
-  {
-    number: "06",
-    title: "Investment Advisory",
-    icon: "TrendingUp",
-    description:
-      "Data-led analysis of where to place capital and how to grow it within Nigerian real estate.",
-    items: [
-      "Real estate investment analysis",
-      "Market research",
-      "Development advisory",
-      "Risk assessment",
+      "Real estate investment and development advisory",
     ],
   },
 ];
